@@ -32,12 +32,13 @@ body{
 }
 
 #title{ 
-    font-size : 100px;
+    font-size : 10vh;;
     font-family: 'Bebas Neue';
     font-weight: bold;
     text-align: match-parent;
     font-style: italic;
     letter-spacing: 1rem;
+    max-width: 100%;
 }
 
 hr {
@@ -52,6 +53,7 @@ hr {
     text-align: center;
     font-style: italic;
     letter-spacing: 10px;
+    max-width: 100%;
 }
 
 #image{

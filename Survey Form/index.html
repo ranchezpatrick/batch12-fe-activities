@@ -2,17 +2,168 @@
     <html>
         <head>
             <meta charset="utf-8">
+            <!--Rubik-->
+            <link  rel="stylesheet" type= "text/css" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <!--Dancing Font-->
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
             <title></title>
         </head>
+        
         <body>
-            <h1 id="title">NBA Bandwagon Form</h1>
-            <form id= "survey-form">
+            <div class="header">
+                <h1> STARBUCKS COFFEE </h1>
+                <hr>
+            </div>
 
-            <input type="text" name="email" placeholder="Write your e-mail..."> </input>
-            <input type="text" name="email" Value="Write your e-mail..."> </input>
-            <input type="radio" name="email" placeholder="Write your e-mail..."> </input>
-                             
-            </form>
+        <div class="container">
+        <div class="image"><img src="Image-4.jpg"></div>
+        <div class="survey">
+            <!--User Story #1-->
+            <div class="Form-Title">
+            <h1 id="title">YOUR ORDER CARD</h1>
             
+            
+            <!--User Story #2-->
+            <p id="description">Fill in the card so we can process your dirnk</p>
+            <!--User Story #3-->
+            </div>
+        <hr>
+            <form id= "survey-form" mehtod="get">
+            
+            <!--User Story #4-6-->
+            <section class="details">
+             <section class="vital info">
+                <label for="name" id="name-label"> Name </label>
+                <br>
+                <input id="name" type="text" name="name" placeholder="Lebron James" required> </input>
+                <br>
+                <br>
+                <label for="email" id="email-label"> Email </label>
+                <br>
+                <input id="email" type="email" name="email" placeholder="LebronJames23@gmail.com" required> </input>
+                <br>
+                <br>
+                <!--User Story #7-9-->  
+                <label for="number" id="number-label">Age</label>
+                <br>
+                <input id="number" type="number" name="number" placeholder="18" min="18" max="100" required></input>
+                <br>
+                <br>
+                <label for="contact" id="contact-label"> Contact </label>
+                <br>
+                <input id="Contact" type="contact" name="contact" placeholder="ex. 09178552818" required> </input>
+             </section>
+             <section id="second-info">
+                <label for="dropdown" id="model">City </label>
+                <br>
+                <select id="dropdown">
+                    <option value="Makati">Makati</option>
+                    <option value="Mandaluyong">Mandaluyong</option>
+                    <option value="Pasig">Pasig</option>
+                    <option value="Manila">Manila</option>
+                    <option value="Quezon City">Quezon City</option>
+                    <option value="Las Piñas">Las Piñas</option>
+                    <option value="Paranaque">Paranaque</option>
+                    <option value="Valenzuela">Valenzuela</option>
+                    <option value="Marikina">Marikina</option>
+                    <option value="Mutinlupa">Mutinlupa</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="Caloocan">Caloocan</option>
+                    <option value="Navotas">Navotas</option>
+                    <option value="Taguig">Taguig</option>
+                </select>
+                <br>
+                <br>
+                <label for="name" id="name-label"> Branch </label>
+                <br>
+                <input id="Branch" type="text" name="Branch" placeholder="32nd Avenue BGC" required> </input>
+             </section>
+            </section>   
+            <br>
+            <hr>
+            <!--User Story #12-->
+            <div class="Drink">
+
+             <section id="Type">
+            <label for="dropdown" id="model"><b>Type of Drink</b> </label>
+            <br>
+                <select id="dropdown">
+                <option value="Frapuccino">Frapuccino</option>
+                <option value="Teavana">Teavana</option>
+                <option value="Brewed Coffee">Brewed Coffee</option>
+                <option value="Non-Caffienated">Non-Caffienated</option>
+
+            </select>
+            </section>
+
+             <section id="Flavor">
+                <label for="Dirnk" id="flavor"> Name of Drink </label>
+                <br>
+                <input id="flavor" type="text" name="flavor" placeholder="Chocolate Chip Cream" required></input>
+
+             </section>
+            </div>
+            <br>
+            <br>
+            <!--User Story #13-->
+            <div class="custom">
+            <div class="Radio">
+            <section id="size">
+            <label for="Size" id="Size"><b>Size</b></label>
+                <br>
+                <input id="Size" type="radio" id="Tall" name="Size" value="Tall">
+                <label for="Size">Tall <span style="color:#046d3c"> (12oz)</span></label>
+                <br>
+                <input id="Size" type="radio" id="Grande" name="Size" value="Grande">
+                <label for="Size">Grande <span style="color:#046d3c"> (16oz)</span></label>
+                <br>
+                <input id="Size" type="radio" id="Venti" name="Size" value="Venti">
+                <label for="Size">Venti <span style="color:#046d3c"> (24oz)</label>
+            </section>
+            </div>
+            <br>
+            <!--User Story #14-->
+            <br>
+            <section id="add">
+            <label for="Add-ons"><span style="color:#046d3c"> <b>Add-ons:</b></span> </label>
+            <br>
+                <input id="checkbox" type="checkbox" name="Add-ons" value="Whole Milk">
+                <label for="checkbox">Whole Milk</label>
+            <br>
+                <input id="checkbox" type="checkbox" name="Add-ons" value="Added Toppings">
+                <label for="checkbox">Toppings</label>
+            <br>
+                <input id="checkbox" type="checkbox" name="Add-ons" value="Classic Syrup">
+                <label for="checkbox">Classic Syrup</label>               
+            <br>
+                <input id="checkbox" type="checkbox" name="Add-ons" value="Hazelnut Syrup">
+                <label for="checkbox">Hazelnut Syrup</label>
+            <br>
+                <input id="checkbox" type="checkbox" name="Add-ons" value="Vanilla Syrup">
+                <label for="checkbox">Vanilla Syrup</label>
+            <br> 
+            <br>
+            </section>
+            </div>
+            <!--User Story #15-->
+            <div class="text">
+            <label id="textarea">Additional Notes</label>
+            <br> 
+            <textarea id="textarea" name="instructions" rows="5" cols="40">
+
+            </textarea>
+            <br>
+            </div>
+            <input id="submit" type="submit" value="Place Order" class="button">
+
+            </form>
+        </div> 
+        </div>
+
         </body>
     </html>

@@ -30,6 +30,7 @@ body {
     box-shadow: 0px 25px 83px 0px rgba(0,0,0,0.9);
     -webkit-box-shadow: 0px 25px 83px 0px rgba(0,0,0,0.9);
     -moz-box-shadow: 0px 25px 83px 0px rgba(0,0,0,0.9);
+    transition: ease-out 0.4s;
 }
 .Form-Title{
     text-align: center;
@@ -52,7 +53,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
+    transition: ease-out 0.4s;
 }
 
 .image img {
